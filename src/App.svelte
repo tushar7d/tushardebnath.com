@@ -1,4 +1,6 @@
 <script>
+  import Content from "./Components/Content.svelte";
+  import Grid from "./Components/Grid.svelte";
 </script>
 
 <style>
@@ -74,24 +76,10 @@
 
 <div class="container">
   <div class="content">
-    <div class="content_top">
-      <h1 class="heading">Hello, I’m Tushar Debnath</h1>
-      <p class="paragraph">
-        I’m a Staff Software Engineer currently working as Tech Lead of the Doc
-        Squad at Algolia. I mostly do front-end development, and I’m a Vue.js
-        and CSS nerd. I can &#x27;t shut up about test-driven development and
-        utility-first CSS. I also share what I learn on my blog frontstuff.io,
-        or at meetups and conferences.
-      </p>
-    </div>
+    <Content />
   </div>
+
   <div class="grid">
-    <div class="vsection">
-      <div class="card" />
-    </div>
-    <div class="hsection">
-      <div class="card" />
-      <div class="card" />
-    </div>
+    <Grid />
   </div>
 </div>
