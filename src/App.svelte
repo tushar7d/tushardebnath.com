@@ -1,26 +1,22 @@
 <script>
-  import Grid from "./Components/Grid.svelte";
-  import About from "./Components/About.svelte";
 </script>
 
 <style>
   .container {
-    height: 100vh;
-    max-width: 1440px;
+    max-width: 1280px;
     min-width: 320px;
     margin: 0 auto 0 auto;
-
     display: block;
   }
-  .grid{
+  .grid {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: wheat;
-    width:100%;
-    flex:1;
+    width: 100%;
+    flex: 1;
   }
-  .content{
+  .content {
     width: 100%;
   }
   /* Extra small devices (phones, 600px and down) */
@@ -42,7 +38,6 @@
     .container {
       background-color: blue;
     }
-    
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
@@ -50,13 +45,14 @@
     .container {
       display: flex;
       background-color: yellow;
+      height: 100vh;
     }
-      .content{
-    width: 50%;
-  }
-  .grid {
-      width:50%;
-          }
+    .content {
+      width: 50%;
+    }
+    .grid {
+      width: 50%;
+    }
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -64,14 +60,15 @@
     .container {
       display: flex;
       background-color: purple;
-      width:100%
+      width: 100%;
+      height: 100vh;
     }
-    .content{
-    width: 50%;
-  }
-  .grid {
-      width:50%;
-          }
+    .content {
+      width: 50%;
+    }
+    .grid {
+      width: 50%;
+    }
   }
 </style>
 
@@ -91,13 +88,8 @@
   <div class="grid">
     <div class="vsection">
       <div class="card" />
-      <div class="card" />
     </div>
     <div class="hsection">
-      <div class="card" />
-      <div class="card" />
-      <div class="card" />
-      <div class="card" />
       <div class="card" />
       <div class="card" />
     </div>
