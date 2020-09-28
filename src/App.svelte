@@ -14,7 +14,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: wheat;
     width: 100%;
     flex: 1;
   }
@@ -22,31 +21,32 @@
     width: 100%;
   }
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
+  /*  @media only screen and (max-width: 600px) {
     .container {
       background-color: red;
     }
   }
 
-  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Small devices (portrait tablets and large phones, 600px and up) 
   @media only screen and (min-width: 600px) {
     .container {
       background-color: pink;
     }
   }
+  */
 
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
+  /*Medium devices (landscape tablets, 768px and up) */
+  /*@media only screen and (min-width: 768px) {
     .container {
       background-color: blue;
     }
-  }
+  }*/
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .container {
       display: flex;
-      background-color: yellow;
+      /*background-color: yellow;*/
       height: 100vh;
     }
     .content {
@@ -61,7 +61,7 @@
   @media only screen and (min-width: 1200px) {
     .container {
       display: flex;
-      background-color: purple;
+      /* background-color: purple; */
       width: 100%;
       height: 100vh;
     }
