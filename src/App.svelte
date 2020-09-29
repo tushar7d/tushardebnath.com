@@ -11,11 +11,8 @@
     display: block;
   }
   .grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     width: 100%;
-    flex: 1;
+
   }
   .content {
     width: 100%;
@@ -46,7 +43,7 @@
   @media only screen and (min-width: 992px) {
     .container {
       display: flex;
-      /*background-color: yellow;*/
+      
       height: 100vh;
     }
     .content {
@@ -60,8 +57,6 @@
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
     .container {
-      display: flex;
-      /* background-color: purple; */
       width: 100%;
       height: 100vh;
     }
