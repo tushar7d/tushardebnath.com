@@ -23,7 +23,8 @@
     p {
         margin: 0px;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
+        line-height: 1.5;
     }
 </style>
 

@@ -5,7 +5,7 @@
     let data = [
         {
             name: 'Crystal Gems',
-            description: 'A modular order tracking system for foor deliveries.',
+            description: 'A modular order tracking system for food deliveries.',
             company: 'Zomato',
         },
         {
@@ -57,12 +57,7 @@
         font-weight: 600;
         margin-bottom: 24px;
     }
-    .col_2 {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 12px;
-        column-gap: 12px;
-    }
+
     @media only screen and (max-width: 991px) {
         h1 {
             font-size: 24px;
@@ -76,12 +71,17 @@
 </style>
 
 <div class="vsection">
-    <h1>Projects</h1>
+    <h1>Selected Projects</h1>
     {#each data as d}
         <Card
             data={{ name: d.name, description: d.description, company: d.company }} />
     {/each}
-    <h1>Writing</h1>
+    <h1>Writing and other fun stuff</h1>
+
+    {#each datah as d}
+        <HalfCard data={{ pub: d.pub, title: d.title }} />
+    {/each}
+    <h1>Plugin and tools</h1>
 
     {#each datah as d}
         <HalfCard data={{ pub: d.pub, title: d.title }} />
