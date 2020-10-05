@@ -18,8 +18,7 @@
         font-size: 14px;
         font-weight: 200;
         margin-bottom: 12px;
-        opacity: 0.4;
-       
+        opacity: 0.4;    
     }
     p {
         margin: 0px;
