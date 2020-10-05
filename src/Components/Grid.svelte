@@ -22,16 +22,17 @@
         row-gap: 12px;
         column-gap: 12px;
     }
+   
 </style>
 
 <div class="vsection">
     <h1>Projects</h1>
-    <Card />
-    <Card />
-    <Card />
+    <Card  data={{name: "Tushar", description: "An amazing component"}} />
+    
     <h1>Writing</h1>
     <div class="col_2">
         <HalfCard />
         <HalfCard />
+        
     </div>
 </div>
