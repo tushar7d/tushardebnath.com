@@ -22,6 +22,17 @@
         row-gap: 12px;
         column-gap: 12px;
     }
+    @media only screen and (max-width: 991px) {
+        h1 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+        .vsection {
+        
+        padding: 40px;
+    }
+  }
    
 </style>
 

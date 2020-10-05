@@ -36,6 +36,28 @@
         margin-left: 12px;
     }
 
+    @media only screen and (max-width: 991px) {
+        h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        font-weight: 600;
+        margin: 0px;
+        margin-bottom: 28px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 0px;
+    }
+    .quick_link_container {
+      display: none;
+    }
+    section {
+        padding: 40px;
+       height: auto;
+    }
+  }
+
 </style>
 
 <section>
