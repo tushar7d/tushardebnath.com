@@ -9,6 +9,7 @@
     min-width: 320px;
     margin: 0 auto 0 auto;
     display: block;
+    
   }
   .grid {
     width: 100%;
@@ -32,12 +33,7 @@
   }
   */
 
-  /*Medium devices (landscape tablets, 768px and up) */
-  /*@media only screen and (min-width: 768px) {
-    .container {
-      background-color: blue;
-    }
-  }*/
+  
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
@@ -45,13 +41,20 @@
       display: flex;
       
       height: 100vh;
+      overflow: hidden;
     }
     .content {
       width: 50%;
     }
     .grid {
       width: 50%;
+      overflow: scroll;
+      -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
     }
+    .grid::-webkit-scrollbar {
+  display: none;
+}
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -59,13 +62,20 @@
     .container {
       width: 100%;
       height: 100vh;
+      overflow: hidden;
     }
     .content {
       width: 50%;
     }
     .grid {
       width: 50%;
+      overflow: scroll;
+      -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
     }
+    .grid::-webkit-scrollbar {
+  display: none;
+}
   }
 </style>
 
