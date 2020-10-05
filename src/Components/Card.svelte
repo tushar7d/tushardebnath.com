@@ -1,5 +1,5 @@
 <script>
-    export let data = {name: "Name", description:"A simple description"};
+    export let data = {name: "Name", description:"A simple description", company:"company"};
 
 </script>
 <style>
@@ -21,15 +21,26 @@
         margin: 0px;
         font-size: 18px;
         font-weight: 600;
+       
     }
     p {
         margin: 0px;
-        margin-top: 4px;
-        font-size: 14px;
+        margin-top: 8px;
+        font-size: 16px;
         font-weight: 400;
+        opacity: 0.4;
+    }
+    .comp{
+        font-size: 14px;
+        font-weight: 200;
+        margin-bottom: 12px;
+        opacity: 0.4;
+
     }
 </style>
 <div class="card">
+    <div class="comp">{data.company}</div>
     <h3>{data.name}</h3>
     <p>{data.description}</p>
+   
 </div>

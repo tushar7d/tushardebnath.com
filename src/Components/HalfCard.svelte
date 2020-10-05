@@ -6,7 +6,7 @@
     .card {
         background-color: #212121;
         border-radius: 8px;
-        padding: 24px;
+        padding: 12px;
         transition: all 250ms ease-out;
     }
     .card:hover {
@@ -16,7 +16,7 @@
     }
     h3 {
         margin: 0px;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
     }
     p {

@@ -1,6 +1,14 @@
 <script>
     import Card from './Card.svelte'
     import HalfCard from './HalfCard.svelte'
+
+    let data = [
+        { name: 'Crystal Gems', description: 'A modular order tracking system for foor deliveries.', company: 'Zomato' },
+        { name: 'Finding the Right Car', description: 'Helping car renters find the rigth car', company: 'Expedia' },
+        { name: 'Keeping users engaged', description: 'User Retention strategy for retaining and growing the userbase ', company: 'Hike Messenger' },
+        { name: 'Cosmos design system', description: 'Order Tracking system', company: 'Zomato' }
+       
+    ]
 </script>
 
 <style>
@@ -24,26 +32,24 @@
     }
     @media only screen and (max-width: 991px) {
         h1 {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 24px;
-    }
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
         .vsection {
-        
-        padding: 40px;
+            padding: 40px;
+        }
     }
-  }
-   
 </style>
 
 <div class="vsection">
     <h1>Projects</h1>
-    <Card  data={{name: "Tushar", description: "An amazing component"}} />
-    
+    {#each data as d}
+    <Card data={{ name:d.name, description: d.description, company: d.company }} />
+    {/each}
     <h1>Writing</h1>
     <div class="col_2">
         <HalfCard />
         <HalfCard />
-        
     </div>
 </div>
